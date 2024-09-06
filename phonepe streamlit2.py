@@ -791,34 +791,7 @@ if selected == "TRANSACTION":
                 st.title("")
                 plgraph=px.bar(disF10, x="District", y="Transaction_amount", color="District", color_discrete_sequence=["orangered"], width=900)
                 st.plotly_chart(plgraph)
-#         else:
-#             with col41:
 
-#                 figtops=go.Figure(data=[go.Table(
-#                     header=dict(values=["Rank", "District", "Transaction amount"],
-#                             line_color='darkslategray',
-#                             fill_color='lightskyblue',
-#                             font=dict(color='black'),
-#                             align='left'),
-#                     cells=dict(values=[distableF.rownumber, distableF.District, distableF.Transaction_amount],
-#                             line_color='darkslategray',
-#                             fill_color=[['lightcyan',"yellow"]*18],
-#                             font=dict(color='black'),
-#                             align='left'))])
-#                 figtops.update_layout(title="Top 10 Districts", width=400)
-#                 st.write(figtops)
-
-#             with col42:
-#                 st.title("")
-#                 st.title("")
-#                 plgraph=px.bar(distableF, x="District", y="Transaction_amount", color="District", color_discrete_sequence=["orangered"], width=900)
-#                 st.plotly_chart(plgraph)
-
-
-#     with tab2:
-#         pass
-#     with tab3:
-#         pass
                   
 if selected=="USER":
     st.write("will be updated soon")
